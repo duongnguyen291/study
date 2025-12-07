@@ -15,7 +15,6 @@ class HoaDonVIP(HoaDon):
     def __init__(self, ten_khach):
         """
         Hàm khởi tạo
-        
         Args:
             ten_khach: Tên khách hàng VIP
         """

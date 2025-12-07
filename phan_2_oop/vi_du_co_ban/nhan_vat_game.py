@@ -56,8 +56,8 @@ class NhanVatGame:
 # ========== SỬ DỤNG ==========
 
 # Tạo nhân vật
-yasuo = NhanVatGame("Yasuo", "Xanh")
-steve = NhanVatGame("Steve", "Nâu")
+yasuo = NhanVatGame("Yasuo", "Xanh") # khởi tạo đối tượng
+steve = NhanVatGame("Steve", "Nâu") # khởi tạo đối tượng
 
 print("=== YASUO ===")
 yasuo.xem_thong_tin()

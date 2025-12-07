@@ -3,14 +3,14 @@ Ví dụ cơ bản về Class và Object
 Minh họa: Class là khuôn, Object là sản phẩm
 """
 
-
+# Bản vẽ robot --> Ra thành các con robot thực sự. 
 class Robot:
     """
     Class Robot - Đây là "khuôn" để tạo ra các con Robot
     Class chỉ là bản vẽ thiết kế, không phải Robot thật
     """
     
-    def __init__(self, ten, mau_sac):
+    def __init__(self, ten, mau_sac, chieu_cao, toc_he):
         """
         Hàm khởi tạo (Constructor)
         Được gọi tự động khi tạo object mới
@@ -18,12 +18,14 @@ class Robot:
         # Đây là THUỘC TÍNH (Attribute)
         self.ten = ten
         self.mau_sac = mau_sac
+        self.chieu_cao = chieu_cao
+        self.toc_he = toc_he
         self.nang_luong = 100  # Năng lượng mặc định
-    
+
     def chay(self):
         """Phương thức (Method) - Hành động của Robot"""
         if self.nang_luong > 0:
-            self.nang_luong -= 10
+            self.nang_luong = self.nang_luong - 10
             print(f"{self.ten} đang chạy! Năng lượng còn: {self.nang_luong}")
         else:
             print(f"{self.ten} hết năng lượng, không thể chạy!")
@@ -37,8 +39,8 @@ class Robot:
 # ========== SỬ DỤNG ==========
 
 # Tạo các Object (Robot thật) từ Class Robot (khuôn)
-robot_a = Robot("Robot A", "Xanh")
-robot_b = Robot("Robot B", "Đỏ")
+robot_a = Robot("Robot A", "Xanh","2m","co dien")
+robot_b = Robot("Robot B", "Đỏ","10m","khong lo")
 
 print("=== Robot A ===")
 print(f"Tên: {robot_a.ten}")

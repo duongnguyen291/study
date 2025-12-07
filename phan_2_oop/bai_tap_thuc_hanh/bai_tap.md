@@ -29,19 +29,6 @@ Tạo 2 object `XeMay` và test các phương thức.
 
 4. Tạo object và test các phương thức.
 
-## Bài tập 3: Đóng gói (Encapsulation)
-
-### Yêu cầu:
-Tạo class `TaiKhoan` với:
-- **Private thuộc tính**: `__so_tien`, `__mat_khau`
-- **Public thuộc tính**: `ten_chu_tai_khoan`
-- **Public phương thức**:
-  - `nap_tien(so_tien, mat_khau)`: Nạp tiền (cần mật khẩu)
-  - `rut_tien(so_tien, mat_khau)`: Rút tiền (cần mật khẩu, kiểm tra số dư)
-  - `xem_so_du(mat_khau)`: Xem số dư (cần mật khẩu)
-  - `doi_mat_khau(mat_khau_cu, mat_khau_moi)`: Đổi mật khẩu
-
-Test các phương thức và thử truy cập trực tiếp `__so_tien` (sẽ không được).
 
 ## Bài tập 4: Dự án Quán Trà Sữa - Mở rộng
 
@@ -102,7 +89,6 @@ Tạo hệ thống quản lý thư viện với các class:
 2. Tạo file riêng cho mỗi bài tập:
    - `bai_tap_1_xe_may.py`
    - `bai_tap_2_ke_thua.py`
-   - `bai_tap_3_encapsulation.py`
    - `bai_tap_4_tra_sua_mo_rong/` (thư mục)
    - `bai_tap_5_thu_vien/` (thư mục)
 3. Đảm bảo code chạy được không lỗi

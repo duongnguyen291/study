@@ -3,13 +3,12 @@ Class HoaDon - Quản lý hóa đơn
 Đây là đối tượng quản lý (Manager Object) - Quan trọng!
 """
 
-
+     
 class HoaDon:
     """
     Class quản lý hóa đơn
     Chứa một danh sách các ly trà sữa (Object trong Object)
     """
-    
     def __init__(self):
         """
         Hàm khởi tạo

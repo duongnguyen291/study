@@ -2,13 +2,10 @@
 Class TraSua - Đại diện cho một ly trà sữa
 Đây là đối tượng dữ liệu (Data Object) - thành phần nhỏ nhất
 """
-
-
 class TraSua:
     """
     Class đại diện cho một ly trà sữa
     """
-    
     def __init__(self, ten, gia, size="M", topping="Không"):
         """
         Hàm khởi tạo
@@ -28,7 +25,6 @@ class TraSua:
             self.gia = gia + 5
         else:
             self.gia = gia
-    
     def __str__(self):
         """
         Magic method - Được gọi khi print() hoặc str()
@@ -36,7 +32,6 @@ class TraSua:
         """
         topping_str = f" + {self.topping}" if self.topping != "Không" else ""
         return f"{self.ten} ({self.size}){topping_str} - {self.gia}k"
-    
     def tinh_gia_chuan(self):
         """
         Tính giá chuẩn (không tính topping)

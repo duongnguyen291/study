@@ -7,7 +7,6 @@ class KhachHang:
     """
     Class đại diện cho khách hàng
     """
-    
     def __init__(self, ten, loai="Thường"):
         """
         Hàm khởi tạo
@@ -20,7 +19,7 @@ class KhachHang:
         self.loai = loai
         self.so_lan_mua = 0
         self.tong_tien_da_mua = 0
-    
+
     def mua_hang(self, so_tien):
         """
         Cập nhật thông tin khi khách mua hàng
@@ -30,7 +29,6 @@ class KhachHang:
         """
         self.so_lan_mua += 1
         self.tong_tien_da_mua += so_tien
-    
     def nang_cap_vip(self):
         """
         Nâng cấp khách hàng lên VIP
@@ -40,7 +38,6 @@ class KhachHang:
             print(f"🎉 Chúc mừng {self.ten} đã được nâng cấp lên VIP!")
         else:
             print(f"{self.ten} đã là VIP rồi!")
-    
     def __str__(self):
         """
         In thông tin khách hàng
